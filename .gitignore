@@ -61,3 +61,5 @@ gradle/
 gradlew
 gradlew.bat
 settings.gradle
+libs/
+src/main/res/drawable/
