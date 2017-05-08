@@ -6,4 +6,15 @@ package me.cafecode.android.sundaypin.login;
  */
 
 public interface LoginContract {
+
+    interface View {
+
+    }
+
+    interface ActionsListener {
+
+        void login();
+
+    }
+
 }

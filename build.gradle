@@ -32,6 +32,4 @@ ext {
     androidSupportConstraintLayoutVersion = '1.0.2'
     junitVersion = '4.12'
     mockitoVersion = '2.7.22'
-    powerMockito = '1.6.4'
-    hamcrestVersion = '1.3'
 }

@@ -5,5 +5,17 @@ package me.cafecode.android.sundaypin.login;
  * Email: natthawut1991@gmail.com
  */
 
-public class LoginPresenter {
+class LoginPresenter implements LoginContract.ActionsListener {
+
+    private LoginContract.View mView;
+
+    public LoginPresenter(LoginContract.View view) {
+        this.mView = view;
+    }
+
+    @Override
+    public void login() {
+
+    }
+
 }
