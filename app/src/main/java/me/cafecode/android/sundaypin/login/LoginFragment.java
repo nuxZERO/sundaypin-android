@@ -9,10 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import me.cafecode.android.sundaypin.R;
+import me.cafecode.android.sundaypin.data.PinterestRepositoryImplement;
 
 public class LoginFragment extends Fragment implements View.OnClickListener, LoginContract.View {
 
-    private LoginPresenter mActionsLisnter;
+    private LoginPresenter mActionsListener;
 
     public LoginFragment() {
         // Required empty public constructor
@@ -22,7 +23,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Log
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mActionsLisnter = new LoginPresenter(this);
+        mActionsListener = new LoginPresenter(new PinterestRepositoryImplement(getContext()), this);
     }
 
     @Override
@@ -41,7 +42,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Log
 
         switch (v.getId()) {
             case R.id.login_button:
-                mActionsLisnter.login();
+                mActionsListener.login();
                 break;
         }
     }
@@ -49,4 +50,10 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Log
     public static Fragment getInstance() {
         return new LoginFragment();
     }
+
+    @Override
+    public void gotoMainActivity() {
+
+    }
+
 }

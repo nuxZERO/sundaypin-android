@@ -32,4 +32,5 @@ ext {
     androidSupportConstraintLayoutVersion = '1.0.2'
     junitVersion = '4.12'
     mockitoVersion = '2.7.22'
+    jsonVersion = '20160810'
 }

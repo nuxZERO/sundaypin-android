@@ -9,6 +9,8 @@ public interface LoginContract {
 
     interface View {
 
+        void gotoMainActivity();
+
     }
 
     interface ActionsListener {
