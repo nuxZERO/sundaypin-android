@@ -9,14 +9,21 @@ public interface LoginContract {
 
     interface View {
 
-        void gotoMainActivity();
+        void gotoBottomNavigationActivity();
+
+        void showAuthenticationErrorView();
 
     }
 
     interface ActionsListener {
 
+        void start();
+
+        void stop();
+
         void login();
 
+        boolean isLoggedIn();
     }
 
 }
